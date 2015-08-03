@@ -1,2 +1,5 @@
 <h1>A flickr party by hannah.reverse!</h1>
-<%= render_flickr_sidebar_widget('135278064@N04') %>
+
+<% cache ("flickr_sidebar") do %>
+  <%= render_flickr_sidebar_widget('135278064@N04') %>
+<% end %>
