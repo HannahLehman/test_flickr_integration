@@ -1,5 +1,10 @@
-<h1>A flickr party by hannah.reverse!</h1>
+<div class="col-lg-8 col-md-7 col-sm-6">
+  <h1>A flickr party by hannah.reverse!</h1>
+  <p>See what magical things can happen when flickr and Rails make friends.</p>
+</div>
 
-<% cache ("flickr_sidebar") do %>
-  <%= render_flickr_sidebar_widget('135278064@N04') %>
-<% end %>
+<div class="col-lg-12 col-md-10 col-sm-6">
+  <% cache ("flickr_sidebar") do %>
+    <%= render_flickr_sidebar_widget('135278064@N04') %>
+  <% end %>
+</div>

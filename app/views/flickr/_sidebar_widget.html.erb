@@ -1,9 +1,9 @@
-<div class="flickr">
+<div class="flickr photo-grid">
   <ul>
     <% photos.each do |row| -%>
       <li>
         <% row.each do |p| %>
-          <%= link_to(image_tag(p.url(:square), :class => 'flickr_photo', :title => p.title, :border => 0, :size => '75x75'), p.url_photopage) %>
+          <%= link_to(image_tag(p.url(:square), :class => 'flickr_photo img-responsive', :title => p.title, :border => 0), p.url_photopage) %>
         <% end %>
       </li>
     <% end -%>

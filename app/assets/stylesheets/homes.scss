@@ -17,9 +17,15 @@
 
 .flickr_photo
 {
-        width: 75px;
-        height: 75px;
+        width: 150px;
+        height: 150px;
         padding: 12px 10px 32px 13px;
         margin: 0;
-        background: #fff url(../images/pixellated/polaroid.jpg) no-repeat;
+}
+.photo-grid {
+        width: 50%;
+        float: right;
+}
+.photo-grid li {
+        display: inline-block;
 }
